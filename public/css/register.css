@@ -1,0 +1,30 @@
+
+        .heading {
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding: 0px 500px;
+
+        }
+        .form a {
+            text-decoration: none;
+
+        }
+
+        .form input {
+            padding: 9px 4px;
+            outline: none;
+
+        }
+
+        .btn {
+            padding: 15px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+

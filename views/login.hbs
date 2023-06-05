@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+
+    <h2 class="heading">welcome to the login page</h2>
+    <form action="/login" method="post" class="form" autocomplete="off">
+        <input type="email" name="email" id="" placeholder="Enter your Email" autocomplete="none">
+        <input type="password" name="password" id="" placeholder="Enter your Password" autocomplete="none">       
+        <button class="btn" type="submit">Login</button>
+        <div class="msg">{{message}}</div>
+        <p>Create an Account <a href="/register">Register</a></p>
+    </form>
+    
+</body>
+
+</html>

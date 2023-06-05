@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+
+    <h2 class="heading">welcome to the register page</h2>
+    <form action="/register" method="post" class="form" autocomplete="off">
+
+        <input type="text" name="name" id="" placeholder="Enter your Name" autocomplete="none">
+        <input type="email" name="email" id="" placeholder="Enter your Email" autocomplete="none">
+        <input type="password" name="password" id="" placeholder="Enter your Password" autocomplete="none">
+        <input type="number" name="phone" id="" placeholder="Enter your Phone Number" autocomplete="none">
+        <button class="btn" type="submit">Register</button>
+        <div class="msg">{{message}}</div>
+        
+        <h4>Already have an account <a href="/login">Login here</a></h4>
+    </form>
+
+    
+    
+</body>
+
+</html>

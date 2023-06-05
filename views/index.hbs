@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HamroRooms</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <header>
+        <div class="container header_section">
+            <div class="left_header">
+                <p>hamrorooms</p>
+                <h1>we help you to find your <br> dream rooms !</h1>
+                <p> Hamro Rooms website is an online platform designed to connect individuals seeking accommodation with
+                    available rooms for rent. These websites provide a convenient and efficient way for both landlords
+                    and tenants to find suitable matches based on their preferences and requirements</p>
+
+            </div>
+
+            <div class="right_header">
+                {{!-- <img src="/img/mainroomnobg.png" alt=""> --}}
+                <img src="/img/mainroom (2).jpg" alt="">
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="heading">
+            <h1>Featured Rooms Types</h1>
+            <p>Find all Types of Rooms</p>
+        </div>
+        <div class="container card_section">
+
+            <div class="cards">
+                {{!-- <img src="/img/icons/house.gif" alt=""> --}}
+                <img class="room_img" src="/img/icons/house1.png" alt="house_icon">
+                <h2>Want a Room</h2>
+                <p>short paragraph about rooms</p>
+            </div>
+
+            <div class="cards">
+                <img class="room_img" src="/img/icons/house1.png" alt="house_icon">
+                <h2>Want a hostel</h2>
+                <p>short paragraph about rooms</p>
+            </div>
+
+            <div class="cards">
+                <img class="room_img" src="/img/icons/house1.png" alt="house_icon">
+                <h2>Want a Hostel</h2>
+                <p>short paragraph about rooms</p>
+            </div>
+
+        </div>
+    </section>
+
+    {{!-- for roomsliste --}}
+    {{!-- rooms listed --}}
+    <section>
+        <div class="heading">
+            <h1>Recent Rooms Listed</h1>
+            <p>Find all Types of Rooms</p>
+        </div>
+
+        {{!-- {{#each show_Room_Data}}
+         {{>roomslist}}
+         <p>{{this.address}}</p>
+        {{/each}} --}}
+
+        {{>roomslist}}
+
+       
+       {{!-- <div class="second">
+         {{>roomslist}}
+       </div> --}}
+        
+        
+
+    </section>
+
+    
+   
+
+
+
+
+
+
+
+    {{!-- testing purpose --}}
+    <div class="testing"></div>
+
+
+</body>
+
+</html>

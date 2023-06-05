@@ -1,0 +1,52 @@
+<div class="container rooms_list">
+
+    {{#each show_Room_Data}}
+
+    
+    <div class="rooms">
+        {{!-- <img src="/img/rooms/rooms (1).jpg" alt=""> --}}
+        <img src="{{this.image}}" alt="">
+        <p>for rent</p>
+        <div class="details">
+            <h3>{{this.city}}</h3>
+            <button class="seedetailsbtn">See All Details</button>
+        </div>
+
+        <div class="prize">
+            <h3>Rs.{{this.roomrent}}</h3>
+            <p>{{this.address}}</p>
+        </div>
+    </div>
+
+
+    {{/each}}
+
+    {{!-- <div class="rooms">
+        <img src="/img/rooms/rooms (2).jpg" alt="">
+        <p>For Rent</p>
+        <div class="details">
+            <h3>kamalpokhari</h3>
+            <button class="seedetailsbtn">See All Details</button>
+        </div>
+
+        <div class="prize">
+            <h3>$10/month</h3>
+            <p>kamalpokhari</p>
+        </div>
+    </div>
+    <div class="rooms">
+        <img src="/img/rooms/rooms (3).jpg" alt="">
+        <p>For Rent</p>
+        <div class="details">
+            <h3>kamalpokhari</h3>
+            <button class="seedetailsbtn">See All Details</button>
+        </div>
+
+        <div class="prize">
+            <h3>$10/month</h3>
+            <p>kamalpokhari</p>
+        </div>
+    </div> --}}
+
+
+</div>

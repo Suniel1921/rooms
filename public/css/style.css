@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    /* --main-color: rgb(255, 21, 138); */
+    --main-color : #93478f;
+   --secondary-color : rgb(51, 162, 51);
+  }
+
+.container{
+    max-width: 1180px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+
+.main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px;
+     
+   
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    flex-basis: 730px;   /* this line code i dont understand */
+
+
+}
+.navlinks li{
+    list-style: none;
+
+}
+.navlinks a{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.searchbar{
+    border: 2px solid green;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 27px;
+}
+
+
+/* header section style  */
+
+header{
+    padding: 70px 20px;
+    background-image: url('/img/assets/asset\ 64.jpeg');
+    background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+    
+}
+
+.header_section{
+    display: flex;
+    align-items: center;
+}
+.left_header{
+    max-width: 40vw;
+}
+
+.right_header img{
+    width: 600px;
+}
+
+/* card s{ection style  */
+
+    .card_section{
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+    }
+
+.cards{
+    box-shadow: 0px 2px 12px -7px black;
+    padding: 85px 68px;
+    border-radius: 5px;
+}
+.cards:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: 1s;
+}
+.cards h2{
+    text-align: center;
+}
+
+
+.room_img{
+    background-color: #00FA9Aed;
+    border-radius: 50%;
+   display: block;
+   margin: auto;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 34px;
+    margin-top: 34px;
+
+}
+
+/* rooms listed sytles */
+
+.rooms_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rooms{
+    
+    background-color: white;
+    padding: 6px 6px;    
+    padding-bottom: 50px;
+    box-shadow: 0px 2px 8px -5px black;
+}
+
+.rooms p{
+    margin-left: 34px;
+}
+
+.rooms img{
+    width: 350px;
+    height: 227px;
+}
+.details{
+    display: flex;
+   justify-content: space-around;
+}
+
+.prize{
+    border-top: 2px solid gray;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.prize h3, p{
+    margin-top: 23px;
+}
+/* .seedetailsbtn{
+    text-align: center;
+} */
+
+.second{
+    margin-top: 34px;
+}
+
+
+
+
+
+
+
+.testing{
+    height: 343px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Become a Owner</title>
+</head>
+
+<body>
+    <style>
+
+        .ownerroomdetails input {
+          padding: 10px 59px;   
+          outline: none;      
+          {{!-- border-radius: 5px; --}}
+        }
+
+        .owenerBtn{
+            padding: 8px 83px;
+            outline: none;
+            border: none;
+            border-radius: 5px;            
+        }
+        
+ 
+    </style>
+
+    {{>navbar}}
+
+
+    <div class="container">
+        <h1>Welcome to the owner dashboard</h1>
+
+        {{!-- <div class="warning">
+            <h2>Disclaimer !</h2>
+            <p>please don't upload fake rooms its our humble request to you !</p>
+        </div> --}}
+
+        <section>
+
+            <div class="ownerroomdetails">
+                <form action="/become_owner" method="post">
+                <p>Full Adress : </p>
+                <input type="text" name="address" id="" placeholder="Full Address">
+                <p>City : </p>
+                <input type="text" name="city" id="" placeholder="Koteshwar">
+                <p>Rent :</p>
+                <input type="number" name="roomrent" id="" placeholder="0000">
+                <p>Contact No. : </p>
+                <input type="number" name="contactno" id="" placeholder="9800000000">
+                <p>Room Image : </p>
+                <input type="file" name="image" id="">
+                <p><button class="owenerBtn">Submit</button></p>
+                <div class="msg">{{message}}</div>
+                </form>
+
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+</body>
+
+</html>
